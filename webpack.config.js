@@ -2,19 +2,18 @@ var path  = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
-  entry : "./app/entry",
   entry: [
     'webpack-hot-middleware/client?reload=true',
     path.join(__dirname, "./app/entry")
 
   ],
   output : {
-    path : path.resolve('./public/dist'),
-    filename : 'bundle.js'
+    path : path.join(__dirname,'./public/dist'),
+    filename : 'bundle.js',
+    publicPath: '/'
   },
-  devtool: "cheap-eval-source-map",
+  devtool: 'source-map',
   module : {
     rules : [
       {
@@ -40,15 +39,10 @@ module.exports = {
       }
     ]
   },
-  devServer: {
-    contentBase: path.join(__dirname, "public"),
-    compress: true,
-    port: 9000
-  },
   resolve : {
     alias : {
-      '@components' : path.resolve(__dirname,'./app/javascript/components'),
-      '@data'  :path.resolve(__dirname,'./app/javascript/data')
+      '@components' : path.join(__dirname,'./app/javascript/components'),
+      '@data'  :path.join(__dirname,'./app/javascript/data')
     },
     // extensions listed here can be omitted in `import`s
     extensions: ['.js', '.jsx'],
@@ -56,10 +50,10 @@ module.exports = {
     modules: ['node_modules']
   },
   plugins: [new ExtractTextPlugin({
-    filename : 'bundle.[contenthash].css'
+    filename : 'bundle.css'
   }),
   new webpack.HotModuleReplacementPlugin(),
-
+new webpack.NoEmitOnErrorsPlugin(),
             new HtmlWebpackPlugin({
       template : 'index.html',
       inject:'body',
