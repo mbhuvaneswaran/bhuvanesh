@@ -11,7 +11,7 @@ module.exports = {
   output : {
     path : path.join(__dirname,'./public/dist'),
     filename : 'bundle.js',
-    publicPath: '/'
+    publicPath: '/public/dist'
   },
   devtool: 'source-map',
   module : {
@@ -53,9 +53,9 @@ module.exports = {
   new webpack.HotModuleReplacementPlugin(),
 new webpack.NoEmitOnErrorsPlugin(),
             new HtmlWebpackPlugin({
-      template : 'index.html',
+      template : './app/template.html',
       inject:'body',
-      filename : '../index.html'
+      filename : '../../index.html'
     }),
           ]
 }
