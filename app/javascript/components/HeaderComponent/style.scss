@@ -1,5 +1,10 @@
-@import '../../../styles/main.scss'; 
+@import '../../../styles/main.scss';
 .header{
-  height : 50px;
-  background: $theme-background;
+  padding: 25px 0;
+  background: $theme-color;
+  text-align: center;
+  div{
+    height : 20px;
+    color: $white;
+  }
 }

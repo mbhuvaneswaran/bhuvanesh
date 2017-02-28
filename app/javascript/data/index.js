@@ -1,4 +1,4 @@
 let data = {
-  name : 'Bhuvaneswaran Mohan'
+  name : ''
 }
 export default data;

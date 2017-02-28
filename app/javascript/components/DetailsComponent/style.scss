@@ -1,0 +1,8 @@
+@import '../../../styles/main.scss';
+.details-component{
+  position: absolute;
+  width: 70%;
+  right: 0;
+  border-left: 1px solid $border-color;
+  padding-left: 10px;
+}

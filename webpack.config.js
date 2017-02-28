@@ -34,7 +34,7 @@ module.exports = {
             {
               loader:'css-loader',
               options : {modules : true,importLoaders : 1}
-            }, 'sass-loader']
+            }, {loader : 'sass-loader',options : {outputStyle : 'expanded'}}]
         })//ExtractTextPlugin.extract("style","css?localIdentName=[hash:base64:5]&modules&importLoaders=1!postcss-loader!sass?outputStyle=expanded")
       }
     ]
@@ -49,9 +49,7 @@ module.exports = {
     // directories which are searched implicitly in `import`s
     modules: ['node_modules']
   },
-  plugins: [new ExtractTextPlugin({
-    filename : 'bundle.css'
-  }),
+  plugins: [new ExtractTextPlugin('[name].css'),
   new webpack.HotModuleReplacementPlugin(),
 new webpack.NoEmitOnErrorsPlugin(),
             new HtmlWebpackPlugin({

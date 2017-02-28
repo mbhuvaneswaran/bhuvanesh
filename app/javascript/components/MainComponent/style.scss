@@ -1,3 +1,8 @@
+@import '../../../styles/main.scss';
 .main-component{
-  color : white;
+  background-color:  $theme-background;
+  position: relative;
+  .wrapper{
+    margin-top: 10px;
+  }
 }
