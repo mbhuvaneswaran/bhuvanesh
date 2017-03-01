@@ -1,8 +1,56 @@
 @import '../../../styles/main.scss';
 .side-bar-component{
   position: absolute;
-  width: 30%;
+  width: 40%;
   left: 0;
   display: inline-block;
+  height: 100%;
+  color: $white;
   text-align: center;
+  background: $sidebar-background-color;
+  .main-name{
+    font-size: 30px;
+    margin: 10px;
+    margin-top: 0px;
+    /* padding-top: 0; */
+    padding: 10px;
+    padding-top: 0px;
+    text-align: right;
+  }
+  .profile-img{
+    margin-top: 30px;
+    img{
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+  }
+  .lists{
+    margin-top: 30px;
+    .list-item{
+      .list-heading{
+        background-color: $white;
+        color: black;
+        padding: 10px;
+        margin: 5px;
+        box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
+-webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
+-moz-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
+-o-box-shadow: inset 0px 0px 50px 0px #ABABAB,5px 5px 5px 1px #242424;
+      }
+      .list-item-ul{
+        padding: 0;
+        text-align: center;
+        .list-each-item{
+          //list-style: none;
+          word-break: break-word;
+          padding: 10px;
+          &:before{
+            content: '';
+
+          }
+        }
+      }
+    }
+  }
 }

@@ -9,10 +9,10 @@ class MainComponent extends Component{
   render(){
     return (
       <div className={styles['main-component']}>
-        <HeaderComponent name={data.name}/>
         <div className = {styles['wrapper']}>
-        <SideBarComponent/>
-        <DetailsComponent/>
+        <SideBarComponent data = {data.sidebar}/>
+        <DetailsComponent name={data.name} details = {data.details} accomplishments = {data.accomplishments}/>
+        <div>{'footer'}</div>
         </div>
       </div>
     )
