@@ -9,9 +9,9 @@ module.exports = {
 
   ],
   output : {
-    path : path.join(__dirname,'./public/dist'),
+    path : path.join(__dirname,'./'),
     filename : 'bundle.js',
-    publicPath: '/public/dist'
+    publicPath: '/'
   },
   devtool: 'source-map',
   module : {
