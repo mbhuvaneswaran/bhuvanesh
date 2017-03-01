@@ -13,8 +13,6 @@
     margin: 10px;
     margin-top: 0px;
     /* padding-top: 0; */
-    padding: 10px;
-    padding-top: 0px;
     text-align: right;
   }
   .profile-img{
@@ -27,6 +25,7 @@
   }
   .lists{
     margin-top: 30px;
+    list-style: none;
     .list-item{
       .list-heading{
         background-color: $white;
@@ -40,11 +39,13 @@
       }
       .list-item-ul{
         padding: 0;
+        list-style: none;
         text-align: center;
         .list-each-item{
           //list-style: none;
           word-break: break-word;
-          padding: 10px;
+          padding: 20px;
+          padding-bottom: 10px;
           &:before{
             content: '';
 
