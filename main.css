@@ -16,7 +16,7 @@ body {
 }
 
 @media print {
-   {
+  body {
     margin: 0;
     width: 100%;
   }
@@ -49,7 +49,7 @@ body {
 }
 
 @media print {
-   {
+  body {
     margin: 0;
     width: 100%;
   }
@@ -83,7 +83,7 @@ body {
 }
 
 @media print {
-   {
+  body {
     margin: 0;
     width: 100%;
   }
@@ -166,7 +166,7 @@ body {
 }
 
 @media print {
-   {
+  body {
     margin: 0;
     width: 100%;
   }
