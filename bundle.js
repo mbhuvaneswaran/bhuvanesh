@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2b5ac7e9351c29dae02b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c3a737d603a6e855af2d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotMainModule = true; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -11509,7 +11509,7 @@ var data = {
   // },
   {
     heading: 'Skills',
-    items: ['HTML,CSS,Javascript', 'React,Redux,Angular,Mobx', 'Webpack,Grunt,Gulp', 'NodeJS']
+    items: ['HTML, CSS, Javascript', 'React, Redux, Angular, Mobx', 'Webpack, Grunt, Gulp', 'NodeJS']
   }, {
     heading: 'Contact',
     items: ['bhuvanesh12526@gmail.com', '9000936068']
