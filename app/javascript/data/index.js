@@ -40,7 +40,7 @@ let data = {
     // },
     {
       heading : 'Skills',
-      items : ['HTML,CSS,Javascript','React,Redux,Angular,Mobx','Webpack,Grunt,Gulp','NodeJS']
+      items : ['HTML, CSS, Javascript','React, Redux, Angular, Mobx','Webpack, Grunt, Gulp','NodeJS']
     },
     {
       heading : 'Contact',
