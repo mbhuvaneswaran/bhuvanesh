@@ -55,7 +55,7 @@ new webpack.NoEmitOnErrorsPlugin(),
             new HtmlWebpackPlugin({
       template : './app/template.html',
       inject:'body',
-      filename : '../../index.html'
+      filename : 'index.html'
     }),
           ]
 }
